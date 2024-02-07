@@ -1,0 +1,25 @@
+  103  head --help 
+  104  less spotify-2023.csv 
+  105  view spotify-2023.csv 
+  106  vim spotify-2023.csv 
+  107  cd cs131/
+  108  git pull origin main 
+  109  ls
+  110  cat README.md 
+  111  ls
+  112  cat
+  113  cat --help 
+  114  wget github.com
+  115  ls
+  116  cd cs131/
+  117  ls
+  118  history 
+  119  history | tail -15 > cmds.log
+  120  cat cmds.log 
+  121  ls
+  122  mkdir Worksheet1
+  123  mv cmds.log Worksheet1/
+  124  l
+  125  ls
+  126  cd Worksheet1/
+  127  history | tail -25 > cmds.log
