@@ -1,0 +1,16 @@
+  334  grep "United States" Global\ YouTube\ Statistics.csv 
+  335  grep "Music" Global\ YouTube\ Statistics.csv 
+  336  grep "Music" Global\ YouTube\ Statistics.csv | wc -l -w
+  337  grep "Music" Global\ YouTube\ Statistics.csv | wc -l > cs131/Worksheet2/counts.txt 
+  338  grep "Music" Global\ YouTube\ Statistics.csv | wc -w >> cs131/Worksheet2/counts.txt 
+  339  cd cs131/Worksheet2/
+  340  ls
+  341  vi counts.txt 
+  342  ls
+  343  history 
+  344  cd cs131/Worksheet2/
+  345  ls
+  346  vi counts.txt 
+  347  ls
+  348  history
+  349  history | tail -16 > cmds.log 
