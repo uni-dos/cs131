@@ -1,0 +1,17 @@
+2) /bin/bash I used echo $SHELL
+2) /mnt/scratch/SP24_CS131_Jyotika/robertsp24 I used echo $HOME
+3) My group ids are 1232 78. My user id is 1232. I used the id -u to find my user id and id -G to find the groups I belong to. I could have also cat /etc/group for groups and /etc/passwd for the user id.
+4) Yes, I can cd and ls in the directory. I cannot create files though.
+
+5-6) The file was created in myDir2 and moved into myDir3
+6) The total amount of ram the IBM VM has is 71367 mebibytes. This was found through free -m
+              total        used        free      shared  buff/cache   available
+Mem:          71367       29907       23331        3583       18129       36418
+Swap:          4119           0        4119
+
+9) It is running RHEL version 8.6. The result below is greped from /etc/os-release 
+VERSION="8.6 (Ootpa)"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+10) It appears that everyone has read, write, and execute permissions for os-release. It is also a link. 
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release

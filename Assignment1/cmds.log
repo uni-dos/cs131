@@ -1,0 +1,152 @@
+  385  cd cs131/
+  386  ls
+  387  cd Assignment1/
+  388  ls
+  389  cat Assignment1.txt 
+  390  rm Assignment1.txt 
+  391  rmdir myDir/
+  392  ls
+  393  script
+  394  echo $SHELL
+  395  pwd
+  396  touch Assignment1.txt
+  397  echo $SHELL >> Assignment1.txt 
+  398  printenv 
+  399  cat Assignment1.txt 
+  400  echo $HOME
+  401  echo $HOME >> Assignment1.txt 
+  402  cat Assignment1.txt 
+  403  id -u robertsp24
+  404  echo $UID
+  405  vi Assignment1.txt 
+  406  id -u robertsp24 >> Assignment1.txt 
+  407  cat Assignment1.txt 
+  408  id -G robertsp24
+  409  id -g robertsp24
+  410  man id
+  411  id -G robertsp24
+  412  id -G robertsp24 >> Assignment1.txt 
+  413  ls
+  414  mkdir myDir
+  415  man chmod
+  416  ls -la
+  417  man chmod
+  418  chmod -u -w myDir
+  419  ls -la
+  420  chmod u -w myDir
+  421  chmod -w myDir
+  422  ls -la
+  423  rm myDir/
+  424  rm -r myDir/
+  425  ls -la
+  426  mkdir myDir
+  427  ls
+  428  chmod u-w myDir
+  429  ls -la
+  430  chmod u-w myDir/
+  431  ls -la
+  432  cd myDir/
+  433  ls
+  434  ls -l
+  435  pwd
+  436  touch test.txt
+  437  cd ..
+  438  ls
+  439  mkdir myDir2
+  440  cd myDir2/
+  441  mkdir myDir3
+  442  cd ..
+  443  pwd
+  444  ls
+  445  cd myDir
+  446  ls
+  447  cd ..
+  448  cd myDir2/
+  449  ls
+  450  touch myFile.txt
+  451  mv myFile.txt myDir3/
+  452  ls
+  453  ls myDir3/
+  454  free -m
+  455  free
+  456  free -g
+  457  cd ..
+  458  ls
+  459  free -m >> Assignment1.txt 
+  460  man free
+  461  vi Assignment1.txt 
+  462  free --mega 
+  463  free -m >> Assignment1.txt 
+  464  uname -r
+  465  man uname
+  466  uname -o
+  467  man uname
+  468  uname -v
+  469  uname -r
+  470  uname -a
+  471  uname -o >> Assignment1.txt 
+  472  cat /etc/os-release 
+  473  cat /etc/os-release | grep -i "version"
+  474  cat /etc/os-release | grep -i "version="
+  475  cat /etc/os-release | grep -i " version="
+  476  cat /etc/os-release | grep -i "\0version="
+  477  cat /etc/os-release | grep -i "version="
+  478  cat /etc/os-release | grep -i "version=" >> Assignment1.txt 
+  479  ls -la /etc/os-release 
+  480  ls -la /usr/lib/os-release 
+  481  vim Assignment1.txt 
+  482  ls
+  483  cd cs131/
+  484  ls
+  485  cd Assignment1/
+  486  ls
+  487  cat typescript 
+  488  2R0;136;0cqqqexit
+  489  exit
+  490  echo $SHELL
+  491  touch Assignment1.txt
+  492  echo $SHELL >> Assignment1.txt 
+  493  echo $HOME
+  494  echo $HOME >> Assignment1.txt 
+  495  man id 
+  496  id -G robertsp24
+  497  id -G robertsp24 >> Assignment1.txt 
+  498  id -u robertsp24
+  499  id -u robertsp24 >> Assignment1.txt 
+  500  mkdir myDir
+  501  ls -la
+  502  chmod u-w myDir
+  503  ls -la
+  504  cd myDir/
+  505  ls
+  506  ls -l
+  507  ls -la
+  508  touch test
+  509  ls ..
+  510  cd 
+  511  cd cs131/Assignment1/
+  512  ls
+  513  mkdir myDir2
+  514  cd myDir2/
+  515  mkdir myDir3
+  516  touch myFile.txt
+  517  ls
+  518  mv myFile.txt myDir3/
+  519  ls myDir3/
+  520  cd ..
+  521  ls
+  522  free -m
+  523  free -m >> Assignment1.txt 
+  524  cat /etc/os-release 
+  525  cat /etc/os-release | grep -i "version"
+  526  cat /etc/os-release | grep -i "version="
+  527  cat /etc/os-release | grep -i "version=" >> Assignment1.txt 
+  528  ls -la /etc/os-release 
+  529  ls -la /etc/os-release >> Assignment1.txt 
+  530  vim Assignment1.txt 
+  531  cd
+  532  cd cs131/
+  533  cd Assignment1/
+  534  history 
+  535  ls
+  536  history | tail -152 > cmds.log
