@@ -1,0 +1,45 @@
+1a. The command will list all the files under /etc.
+1b. One.txt will contain files that we have permission to. Two.txt will contain directories that we do not have permission to access.
+
+2.
+     1) 15 2006,Mar
+     2) 13 2014,Jul
+     3) 12 2014,Aug
+
+The command I used to get this was cut -d ',' -f 20-21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -n -r | head -3.
+
+The first thing I did was to locate the column of the year and month. That is what cut is doing. I sort the fist becuase for whatever reason, if I do not, uniq does not count correctly. I believe that some of the months have a special ending character that others might not have. Then it is passed to uniq -c which gets the counts and then I sort them again numberically and in reverse order. I finally use head to get the first three. 
+
+3. ps -u robertsp24
+
+    PID TTY          TIME CMD
+1365772 ?        00:00:52 systemd
+1365773 ?        00:00:00 (sd-pam)
+1378931 ?        00:00:01 tmux: server
+1378932 pts/1    00:00:00 bash
+1814620 ?        00:00:00 sshd
+1814621 pts/0    00:00:00 bash
+1814710 pts/0    00:00:00 tmux: client
+1829310 pts/1    00:00:00 ps
+
+
+4b. The second instance of vim displayed a warning. Basically, vim knows that there is another instance running with the same file. The PID is 1819403. The swp file is used as a lock/temporary file so that it can keep track of all instances of the file to avoid overwriting data or corruption.
+
+
+   PID TTY          TIME CMD
+    1365772 ?        00:00:51 systemd
+    1365773 ?        00:00:00 (sd-pam)
+    1378931 ?        00:00:00 tmux: server
+    1378932 pts/1    00:00:00 bash
+    1814620 ?        00:00:00 sshd
+    1814621 pts/0    00:00:00 bash
+    1814710 pts/0    00:00:00 tmux: client
+    1819114 pts/2    00:00:00 bash
+    1820074 pts/1    00:00:00 vim
+    1821980 pts/2    00:00:00 ps
+
+4d. The PID of vim is different? 
+
+5. The init process is the parent of all other processes of the system. It's job is to create and initilize other proceses. It's PID is 1. I used ps -aux | grep "systemd"
+
+6. ps aux lists all the running processes on a system. The aux are options.

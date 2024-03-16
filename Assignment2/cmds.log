@@ -1,0 +1,20 @@
+  749  cut -d ',' -f 20-21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -n -r | head -3 > Assignment2.txt 
+  750  cat Assignment2.txt 
+  751  ps -u aux
+  752  ps a
+  753  ps a -a
+  754  ps a u
+  755  ps aux
+  756  ps aux | grep robertsp24
+  757  ps -u robertsp24
+  758  ps aux | grep systemd
+  759  vim file.txt
+  760  vim Assignment2.txt 
+  761  ps -u robertsp24
+  762  vim Assignment2.txt 
+  763  cut -d ',' -f 20-21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -n -r | head -3
+  764  vim Assignment2.txt 
+  765  ps -u robertsp24
+  766  vim Assignment2.txt 
+  767  ps aux | grep systemd
+  768  history | tail -20 > cmds.log
