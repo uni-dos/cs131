@@ -1,0 +1,80 @@
+  828  ls
+  829  cd cs131/
+  830  cd Worksheet3/
+  831  ls
+  832  sort -k 9,9 -k 16,16 -n Global\ YouTube\ Statistics.csv | head -2
+  833  sort -k 9,9 -k 16,16 -n ~/Global\ YouTube\ Statistics.csv | head -2
+  834  history 
+  835  sort -k 9,9 -k 16,16 -n ~/Global\ YouTube\ Statistics.csv | head -2
+  836  sort -k 9,9 -k 16,16 -n ~/Global\ YouTube\ Statistics.csv | grep US | head -3
+  837  cut -d , -f 9-9
+  838  cut -d , -f 9-9 ~/Global\ YouTube\ Statistics.csv 
+  839  cut -d , -f 2,2 -f 9-9 ~/Global\ YouTube\ Statistics.csv 
+  840  cut -d , -f 2-2 -f 9-9 ~/Global\ YouTube\ Statistics.csv 
+  841  cut -d , -f 2-2,9-9 ~/Global\ YouTube\ Statistics.csv 
+  842  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv 
+  843  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3-3
+  844  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3
+  845  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r
+  846  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r | grep US | head -3
+  847* cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv 
+  848  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , | grep US | head -3
+  849  man sort 
+  850  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , | grep US | head -3
+  851  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , | grep US | head -3 > ws3.txt
+  852  cat ws3.txt 
+  853  vim ws3.txt 
+  854  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , | grep UK
+  855  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , | grep GB
+  856  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , | grep GB | head -3
+  857  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , | grep GB
+  858  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -k2,2 -n -r -t , | grep GB
+  859  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , | grep GB
+  860  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -k2,2 -n -r -t , | grep GB
+  861  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -k2,2 -n -r -t , | grep GB | head -3
+  862  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -k2,2 -n -r -t , | grep GB | head -3 >> ws3.txt 
+  863  cat ws3.txt 
+  864  vim ws3.txt 
+  865  cat ws3.txt 
+  866  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , | grep US | head -4
+  867  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -k2,2 -n -r -t , | grep IN 
+  868  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -k2,2 -n -r -t , | grep IN | head -3
+  869  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , | grep US | head -4
+  870  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -k2,2 -n -r -t , | grep IN | head -3
+  871  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -k2,2 -n -r -t , | grep IN | head -3 >> ws3.txt 
+  872  vim ws3.txt 
+  873  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , 
+  874  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t , | less
+  875* cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -n -r -t ,
+  876  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k2,2 -n -r -t , | grep IN | head -3 >> ws3.txt 
+  877  vim ws3.txt 
+  878* cut -d ,  2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -k2,2 -n -r -t , | grep IN | head -3
+  879  vim ws3.txt 
+  880  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k2,2 -n -r -t , | grep IN | head -3
+  881  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k2,2 -k3,3 -n -r -t , | grep IN | head -3
+  882  cut -d , -f 2-2,9-9,16-16 ~/Global\ YouTube\ Statistics.csv | sort -k2,2 -k3,3 -n -r -t , | uniq -c
+  883  history | tail -20 > cmds.log
+  884  cat cmds.log 
+  885  history | tail -30 > cmds.log
+  886  cat cmds.log 
+  887  history | tail -60 > cmds.log
+  989  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -r | grep -a ',Sports' 
+  990  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -r 
+  991  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, 
+  992  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 -r
+  993  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2
+  994  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 -r
+  995  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 -r | grep -a ",Sports"
+  996  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 -r | grep -a ",Sports" >>ws3.txt 
+  997  vim ws3.txt 
+  998  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 -r | grep -a ",Sports" | head -1 >> ws3.txt 
+  999  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 -r | grep -a ",Education" |
+ 1000  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 -r | grep -a ",Education" 
+ 1001  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 -r | grep -a ",Education" | head -1
+ 1002  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 -r | grep -a ",Education" | head -1 >> ws3.txt 
+ 1003  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 -r | grep -a ",Entertainment" | head -1 >> ws3.txt 
+ 1004  vim ws3.txt 
+ 1005  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 -r | grep -a ",Entertainment" 
+ 1006  cut -d , -f 2-3,5-5  ~/Global\ YouTube\ Statistics.csv | sort -k3,3 -t, -k2,2 | grep -a ",Entertainment" 
+ 1007  ls
+ 1008  history | tail -20 >> cmds.log 
