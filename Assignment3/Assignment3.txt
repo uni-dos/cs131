@@ -1,0 +1,136 @@
+Task 1: 
+
+1. Command used to get the number of lines in last.fake: wc -l ~/last.fake 
+Output of Command: 507 /mnt/scratch/SP24_CS131_Jyotika/robertsp24/last.fake
+
+2. Command used to filter last.fake to contain users with sp24: grep sp24 ~/last.fake >> Assignment3.txt
+Output of Command: "No ouput to stdout. See lastsp24.fake"
+
+3. Command used to get the number of lines in lastsp24.fake
+Output of Command: 478 lastsp24.fake
+
+Task 2:
+Command used to get the users who logged in on a Sunday: grep "Sun" lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN{ print "The list of people who worked on Sunday are:"} {print} END{print "Kudos to these people for putting in the work" }' >> Assignment3.txt
+
+Output of the Command:
+The list of people who worked on Sunday are:
+aayushsp24
+akashsp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+fnusp24
+gavinsp24
+megansp24
+michellesp24
+swansp24
+xuebosp24
+Kudos to these people for putting in the work
+
+Task 3:
+Command used to list the Night Owls: awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print $1}' | sort | uniq | awk 'BEGIN{print "Night Owl List:"} {print } END{print "Night Owls are dope. Please ensure you get enough sleep though."}' >> Assignment3.txt
+
+Output of commands: 
+Night Owl List:
+aarushisp24
+aayushsp24
+ajaysp24
+akashsp24
+albertsp24
+alexsp24
+amansp24
+athishsp24
+ayesp24
+billysp24
+brandonsp24
+breannasp24
+daosp24
+davidsp24
+diyasp24
+dylansp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+jadonsp24
+jaydevsp24
+jimmysp24
+justinsp24
+khushisp24
+kobesp24
+madhavsp24
+manassp24
+matthewsp24
+maysp24
+megansp24
+nicolesp24
+ronsp24
+sandrasp24
+sangsp24
+sheelsp24
+sunidhisp24
+tanishasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+yelinsp24
+zakisp24
+Night Owls are dope. Please ensure you get enough sleep though.
+
+Task 4
+Command used: awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 500 && $2 <= 0900) print $1}' | sort | uniq | awk 'BEGIN{print "Early Birds List:"} {print } END{print "Early Birds are dope. Please ensure you get enough sleep though."}' >> Assignment3.txt
+
+Output of Commands:
+Early Birds List:
+aayushsp24
+ajaysp24
+ericsp24
+gradysp24
+ronsp24
+Early Birds are dope. Please ensure you get enough sleep though.
+
+Task 5:
+Commands used: awk '/^[t]/ {print $1}' lastsp24.fake | sort | uniq >> Assignment3.txt
+
+Output of command:
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+
+Task 6:
+Command used: awk -F: '{uid = $3; if (match($1, /^[a]/) && uid%2 == 0) print $1}' ~/passwd.fake >> Assignment3.txt
+
+Output of commands:
+angie23fa
+areebah23fa
+apple23fa
+ajay23fa
+alan23fa
+amreenf23
+acesp24
+akashsp24
+ayesp24
+alexsp24
+aayushsp24
+ajaysp24
+ashish
+amansp24
+
+Task 7:
+Command used: sed 's/[A-Za-z0-9 ]//g' ~/passwd.fake | sort -u >> Assignment3.txt
+
+Output of Command:
+-::::-:/://
+-:::::///-://
+-:::::///__/-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://
