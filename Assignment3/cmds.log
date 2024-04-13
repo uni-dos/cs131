@@ -1,0 +1,203 @@
+  992  git push origin main 
+  993  ls
+  994  ws4.txt
+  995  ls
+  996  cat ws4.txt 
+  997  exit
+  998  ls
+  999  tmux 
+ 1000  exit
+ 1001  last
+ 1002  last | less
+ 1003  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/last.fake
+ 1004  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
+ 1005  ls
+ 1006  mkdir cs131/Assignment3
+ 1007  cd cs131/Assignment3/
+ 1008  ls
+ 1009  grep *sp24 ~/last.fake 
+ 1010  cat ~/last.fake 
+ 1011  grep ~/last.fake *sp24 
+ 1012  grep "*sp24" ~/last.fake 
+ 1013  grep sp24 ~/last.fake 
+ 1014* 
+ 1015  cat lastsp24.fake | less
+ 1016  ls
+ 1017  touch Assignment3.txt
+ 1018  wc -l ~/last.fake 
+ 1019  wc -l ~/last.fake >> Assignment3.txt 
+ 1020  vim Assignment3.txt 
+ 1021  wc -l lastsp24.fake 
+ 1022  wc -l lastsp24.fake >> Assignment3.txt 
+ 1023  vim Assignment3.txt 
+ 1024  cat lastsp24.fake 
+ 1025  cat lastsp24.fake | less
+ 1026  grep "Sun Apr" lastsp24.fake 
+ 1027  last
+ 1028  last | less
+ 1029  grep "Sun" lastsp24.fake 
+ 1030  grep "Sun" lastsp24.fake | awk '{print $1}'
+ 1031  grep "Sun" lastsp24.fake 
+ 1032  grep "Sun" lastsp24.fake | awk '{print $1}' | uniq 
+ 1033  grep "Sun" lastsp24.fake | awk '{print $1}' | uniq | sort 
+ 1034  grep "Sun" lastsp24.fake | awk '{print $1}' | uniq
+ 1035  grep "Sun" lastsp24.fake | awk '{print $1}' | sort | uniq
+ 1036* grep "Sun" lastsp24.fake | awk 'BEGING {print "The list of people who worked on Sunday are:" }{print $1}' | sort | uniq >> Assignment3.txt 
+ 1037  vim Assignment3.txt 
+ 1038  grep "Sun" lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN{ print "The list of people who worked on Sunday are:"} END{print "Kudos to these people for putting in the work }'
+ 1039  grep "Sun" lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN{ print "The list of people who worked on Sunday are:"} END{print "Kudos to these people for putting in the work" }'
+ 1040  grep "Sun" lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN{ print "The list of people who worked on Sunday are:"} {print } END{print "Kudos to these people for putting in the work" }'
+ 1041  grep "Sun" lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN{ print "The list of people who worked on Sunday are:"} {print} END{print "Kudos to these people for putting in the work" }'
+ 1042  grep "Sun" lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN{ print "The list of people who worked on Sunday are:"} {print} END{print "Kudos to these people for putting in the work" }' >> Assignment3.txt 
+ 1043  vim Assignment3.txt 
+ 1044  ls
+ 1045  cat lastsp24.fake 
+ 1046  cut -d" " lastsp24.fake 
+ 1047  cut -d lastsp24.fake 
+ 1048  cut -d ' ' lastsp24.fake 
+ 1049  cut -d ' ' -f 7 lastsp24.fake 
+ 1050  cut -d ' ' -f 2 lastsp24.fake 
+ 1051  cat lastsp24.fake 
+ 1052  cut -d ' ' -f 1,7 lastsp24.fake 
+ 1053  cut -d ' ' -f 1 -f 7 lastsp24.fake 
+ 1054  cut -w -f 1 -f 7 lastsp24.fake 
+ 1055  cut -w -f1 lastsp24.fake 
+ 1056  cut -d ' ' -f 1-7 lastsp24.fake 
+ 1057  cat lastsp24.fake 
+ 1058  cut -d ' ' -f 1-3 lastsp24.fake 
+ 1059  cut -d ' ' -f 3 lastsp24.fake 
+ 1060  awk '{print $NF}'
+ 1061  awk '{print $NF}' lastsp24.fake 
+ 1062  awk '{print NF}' lastsp24.fake 
+ 1063  tr -d "[:blank:]" lastsp24.fake 
+ 1064  tr -d "[:blank:]" -s lastsp24.fake 
+ 1065  tr -d '[:blank:]' lastsp24.fake 
+ 1066  cat lastsp24.fake | tr -d '[:blank:]'
+ 1067  cat lastsp24.fake | tr [:blank:] '[:space:]'
+ 1068  cat lastsp24.fake | tr [:blank:] ' '
+ 1069  cat lastsp24.fake | tr [:blank:] ' ' | cut -d ' ' -f1,7
+ 1070  cat lastsp24.fake | tr [:blank:] ' '
+ 1071  awk '{print $4}' lastsp24.fake 
+ 1072  ls
+ 1073  cat lastsp24.fake 
+ 1074  awk '{print $7}' lastsp24.fake 
+ 1075  awk '{print $1 $7}' lastsp24.fake 
+ 1076  awk '{print "$1 $7"}' lastsp24.fake 
+ 1077  awk '{print $1 print $7}' lastsp24.fake 
+ 1078  awk '{print $1; print $7}' lastsp24.fake 
+ 1079  awk '{print $1 $7}' lastsp24.fake 
+ 1080  awk '{print $1 " " $7}' lastsp24.fake 
+ 1081  awk '{if ($7 >= 4 && $7 <= 23)print $1 " " $7}' lastsp24.fake 
+ 1082  awk '{if ($7 >= 11 && $7 <=12 )print $1 " " $7}' lastsp24.fake 
+ 1083  awk '{if ($7 >= 23)print $1 " " $7}' lastsp24.fake 
+ 1084  awk '{if ($7 >= 23 || $7 <= 4)print $1 " " $7}' lastsp24.fake 
+ 1085  awk '{if ($7 >= 23 || $7 <= 04)print $1 " " $7}' lastsp24.fake 
+ 1086  awk '{if ($7 >= 23 || $7 <= 04)print $1 " " $7}' lastsp24.fake | less
+ 1087  awk '{if ($7 >= 23:00 || $7 <= 04:00)print $1 " " $7}' lastsp24.fake | less
+ 1088  awk '{if ($7 >= 23:00 || $7 <= 04:00) print $1 " " $7}' lastsp24.fake | less
+ 1089  awk '{print $1 " " $7}' lastsp24.fake | less
+ 1090  awk '{if (match($7, [0-1][0-9]:[0-9][0-9])print $1 " " $7}' lastsp24.fake | less
+ 1091  awk '{if (match($7, [0-1][0-9]:[0-9][0-9]) {print $1 " " $7}' lastsp24.fake | less
+ 1092  awk '{if (match($7, [0-1][0-9]:[0-9][0-9]) {print $1 " " $7}' lastsp24.fake 
+ 1093  awk '{if (match($7, ^[0-1][0-9]:[0-9][0-9]) {print $1 " " $7}' lastsp24.fake 
+ 1094  awk '{if (match($7, [0-1]|[0-9]|:|[0-9]|[0-9]) {print $1 " " $7}' lastsp24.fake 
+ 1095  awk '{if (match($7, ~ /^[0-9]+$/) {print $1 " " $7}' lastsp24.fake 
+ 1096  awk '{if [0-1][0-9]:[0-9][0-9]) {print $1 " " $7}' lastsp24.fake 
+ 1097  awk '{print $1 " " $7}' lastsp24.fake | less
+ 1098  awk '{print $1 " " $7}' lastsp24.fake | sort
+ 1099  awk '{print $1 " " $7}' lastsp24.fake | sort -k1
+ 1100  awk '{print $1 " " $7}' lastsp24.fake | sort -k1 -n
+ 1101  awk '{print $1 " " $7}' lastsp24.fake | sort -k2 -n
+ 1102  awk '{print $1 " " $7}' lastsp24.fake | sort -k2 -n | head 
+ 1103  awk ' $0 ~ /regexp/ {print $1 " " $7}' lastsp24.fake | sort -k2 -n | head 
+ 1104  awk ' $0 ~ /[0-9]/ {print $1 " " $7}' lastsp24.fake | sort -k2 -n | head 
+ 1105  awk '{print $1 " " $7}' lastsp24.fake | sort -k2 -n | head 
+ 1106  awk '{print $1 " " $7}' lastsp24.fake 
+ 1107  awk '{print $1 " " $7}' lastsp24.fake | grep :
+ 1108  awk '{print $1 " " $7}' lastsp24.fake | grep : | awk -F : '{print}'
+ 1109  awk '{print $1 " " $7}' lastsp24.fake | grep : | awk -F: '{print}'
+ 1110  awk '{print $1 " " $7}' lastsp24.fake | grep : | awk -F ":" '{print}'
+ 1111  awk '{print $1 " " $7}' lastsp24.fake | grep :
+ 1112  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed '://g'
+ 1113  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g'
+ 1114  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 4000) print )}'
+ 1115  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 4000)) print}'
+ 1116  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 4000)) print}' | less
+ 1117  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print}'
+ 1118  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print}' | less
+ 1119  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print}' | sort 
+ 1120  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print}' | sort -n
+ 1121  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print}' | sort -n -4
+ 1122  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print}' | sort -n -e
+ 1123  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print}' | sort -n -r
+ 1124  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print $1}' | 
+ 1125  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print $1}'
+ 1126  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print $1}' | uniq 
+ 1127  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print $1}' | sort | uniq
+ 1128  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print $1}' | sort | uniq | awk 'BEGIN{print Night Owl List:} {} END{print Night Owls are dope. Please ensure you get enough sleep though.}'
+ 1129  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print $1}' | sort | uniq | awk 'BEGIN{print "Night Owl List:"} {} END{print "Night Owls are dope. Please ensure you get enough sleep though."}'
+ 1130  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print $1}' | sort | uniq | awk 'BEGIN{print "Night Owl List:"} {print } END{print "Night Owls are dope. Please ensure you get enough sleep though."}'
+ 1131  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print $1}' | sort | uniq | awk 'BEGIN{print "Night Owl List:"} {print } END{print "Night Owls are dope. Please ensure you get enough sleep though."}' >> Assignment3.txt 
+ 1132  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print $1}' | less
+ 1133* awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 0500 && ($2 <= 0900)) print }' | less
+ 1134  vim Assignment3.txt 
+ 1135  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >=0500 && $2 <= 0900)) print $1}' | sort | uniq | awk 'BEGIN{print "Night Owl List:"} {print } END{print "Night Owls are dope. Please ensure you get enough sleep though."}'
+ 1136  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >=0500 && $2 <= 0900) print $1}' | sort | uniq | awk 'BEGIN{print "Night Owl List:"} {print } END{print "Night Owls are dope. Please ensure you get enough sleep though."}'
+ 1137  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >=0500 && $2 <= 0900) print }' 
+ 1138  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >=0500 && $2 < 1000) print }' 
+ 1139  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >=0500 && $2 < 0900) print }' 
+ 1140  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print $1}' | less
+ 1141  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 2300 || ($2 >=0000 && $2 <= 0400)) print}' | less
+ 1142  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if(($2 >=0400 && $2 <= 0900)) print}' | less
+ 1143  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if(($2 >=400 && $2 <= 0900)) print}' | less
+ 1144  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if(($2 >= 0400 && $2 <= 0900)) print}' | less
+ 1145  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if(($2 >= 400 && $2 <= 900)) print}' | less
+ 1146* awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if(($2 >= 400 && $2 <= 0900)) print}' 
+ 1147  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 500 && $2 <= 0900) print $1}' | sort | uniq | awk 'BEGIN{print "Early Birds List:"} {print } END{print "Early Birds are dope. Please ensure you get enough sleep though."}'
+ 1148  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 500 && $2 <= 0900) print}' | sort 
+ 1149  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 500 && $2 <= 900) print}' | sort 
+ 1150  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 <= 900) print}' | sort 
+ 1151  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 <= 900) print}' | sort | less
+ 1152  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 500 && $2 <= 0900) print $1}' | sort | uniq | awk 'BEGIN{print "Early Birds List:"} {print } END{print "Early Birds are dope. Please ensure you get enough sleep though."}'
+ 1153  awk '{print $1 " " $7}' lastsp24.fake | grep : | sed 's/://g' | awk '{if($2 >= 500 && $2 <= 0900) print $1}' | sort | uniq | awk 'BEGIN{print "Early Birds List:"} {print } END{print "Early Birds are dope. Please ensure you get enough sleep though."}' >> Assignment3.txt 
+ 1154  vim Assignment3.txt 
+ 1155  awk '/^[t]/ {print $1}' lastsp24.fake 
+ 1156  awk '/^[t]/ {print $1}' lastsp24.fake | uniq
+ 1157  awk '/^[t]/ {print $1}' lastsp24.fake | sort | uniq
+ 1158  awk '/^[t]/ {print $1}' lastsp24.fake | sort | uniq >> Assignment3.txt 
+ 1159  vim Assignment3.txt 
+ 1160  cat ~/passwd.fake 
+ 1161  awk -F: '/^[t]/ {print $1}' ~/passwd.fake
+ 1162  awk -F: '/^[a]/ {print $1}' ~/passwd.fake
+ 1163  awk -F: '/^[a]/ {if ($3/2 == 0) print $1}' ~/passwd.fake
+ 1164  awk -F: '/^[a]/ {print $1 " " $3}' ~/passwd.fake
+ 1165  awk -F: '/^[a]/ {uid = $3; if (uid/2 == 0) print $1}' ~/passwd.fake
+ 1166  awk -F: '/^[a]/ {uid = $3; if (uid%2 == 0) print $1}' ~/passwd.fake
+ 1167  awk -F: '/^[a]/ {uid = $3; if (uid%2 == 0) print $1 " " $2}' ~/passwd.fake
+ 1168  awk -F: '/^[a]/ {uid = $3; if (uid%2 == 0) print $1 " " $3}' ~/passwd.fake
+ 1169  awk -F: '/^[a]/ {uid = $3; if (match($1, /^[a]/) && uid%2 == 0) print $1 " " $3}' ~/passwd.fake
+ 1170  awk -F: '{uid = $3; if (match($1, /^[a]/) && uid%2 == 0) print $1 " " $3}' ~/passwd.fake
+ 1171  awk -F: '{uid = $3; if (match($1, /^[a]/) && uid%2 == 0) print $1}' ~/passwd.fake
+ 1172  awk -F: '{uid = $3; if (match($1, /^[a]/) && uid%2 == 0) print $1}' ~/passwd.fake >> Assignment3.txt 
+ 1173  vim Assignment3.txt 
+ 1174  sed /s/[A-Za-z0-9 ]/g
+ 1175  sed '/s/[A-Za-z0-9 ]/g'
+ 1176  vim Assignment3.txt 
+ 1177  sed 's/[A-Za-z0-9 ]/g'
+ 1178  sed 's/[A-Za-z0-9 ]//g'
+ 1179  sed 's/[A-Za-z0-9 ]//g' ~/passwd.fake 
+ 1180  sed 's/[A-Za-z0-9 ]//g' ~/passwd.fake | sort -u
+ 1181  sed 's/[A-Za-z0-9 ]//g' ~/passwd.fake | sort -u >> Assignment3.txt 
+ 1182  ls
+ 1183  vim Assignment3.txt 
+ 1184  ls
+ 1185  cd ..
+ 1186  git add Assignment3/*
+ 1187  git commit -m "finished A3"
+ 1188  git push origin main 
+ 1189  cd Assignment3/
+ 1190  history | tail -50 | less
+ 1191  history | tail -100 | less
+ 1192  history | tail -150 | less
+ 1193  history | tail -202 | less
+ 1194  history | tail -203 >> cmds.log
