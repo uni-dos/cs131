@@ -1,0 +1,55 @@
+ 1147  ./ws5.sh ~/Global\ YouTube\ Statistics.csv 
+ 1148  vim ws5.sh 
+ 1149  ./ws5.sh ~/Global\ YouTube\ Statistics.csv 
+ 1150  vim ws5.sh 
+ 1151  ./ws5.sh ~/Global\ YouTube\ Statistics.csv 
+ 1152  vim ws5.sh 
+ 1153  ./ws5.sh ~/Global\ YouTube\ Statistics.csv 
+ 1154  vim ws5.sh 
+ 1155  ./ws5.sh ~/Global\ YouTube\ Statistics.csv 
+ 1156  vim ws5.sh 
+ 1157  ./ws5.sh ~/Global\ YouTube\ Statistics.csv 
+ 1158  ./ws5.sh ~/Global\ YouTube\ Statistics.csv | less
+ 1159  grep "Wilderness,982,United" ~/Global\ YouTube\ Statistics.csv 
+ 1160  vim ws5.sh 
+ 1161  ./ws5.sh ~/Global\ YouTube\ Statistics.csv
+ 1162  vim ws5.sh 
+ 1163  ./ws5.sh ~/Global\ YouTube\ Statistics.csv 
+ 1164  vim ws5.sh 
+ 1165  ./ws5.sh ~/Global\ YouTube\ Statistics.csv 
+ 1166  vim ws5.sh 
+ 1167  ./ws5.sh ~/Global\ YouTube\ Statistics.csv 
+ 1168  ./ws5.sh ~/Global\ YouTube\ Statistics.csv | less
+ 1169  vim ws5.sh 
+ 1170  ./ws5.sh ~/Global\ YouTube\ Statistics.csv
+ 1171  ls
+ 1172  ls United\ States/
+ 1173  cat United\ States/Music.txt 
+ 1174  cat United\ States/Gaming.txt 
+ 1175  cat United\ States/Entertainment.txt 
+ 1176  cat United\ States/Entertainment.txt | l
+ 1177  cat United\ States/Entertainment.txt | less
+ 1178  cat United\ States/Comedy.txt 
+ 1179  ls
+ 1180  head -3 ~/Global\ YouTube\ Statistics.csv 
+ 1181  head -4 ~/Global\ YouTube\ Statistics.csv 
+ 1182  grep "MrBeast" United\ States/Entertainment.txt 
+ 1183  ls
+ 1184  cat United\ States/Entertainment.txt | less
+ 1185  ls
+ 1186  rm United\ States/*.txt
+ 1187  ./ws5.sh ~/Global\ YouTube\ Statistics.csv 
+ 1188  cat United\ States/Entertainment.txt | less
+ 1189  cat United\ States/Gaming.txt 
+ 1190  cat United\ States/Comedy.txt 
+ 1191  cat United\ States/Music.txt 
+ 1192  ls
+ 1193  history | tail -55 >> cmds.log
+ 1194  cat cmds.log | less
+ 1195  touch ws5.txt
+ 1196  wc -l United\ States/Comedy.txt >> ws5.txt 
+ 1197  wc -l United\ States/Entertainment.txt >> ws5.txt 
+ 1198  wc -l United\ States/Gaming.txt >> ws5.txt 
+ 1199  wc -l United\ States/Music.txt >> ws5.txt 
+ 1200  vim ws5.txt 
+ 1201  history | tail -55 > cmds.log

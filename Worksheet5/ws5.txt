@@ -1,0 +1,4 @@
+Comedy: 22 United States/Comedy.txt
+Entertainment: 68 United States/Entertainment.txt
+Gaming: 26 United States/Gaming.txt
+Music: 73 United States/Music.txt
